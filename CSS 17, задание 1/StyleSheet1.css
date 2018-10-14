@@ -53,3 +53,6 @@
    display: none; /* Без JS не знаю как вывести */
    }
  }
+ a:hover {
+background-color:red;
+ }
