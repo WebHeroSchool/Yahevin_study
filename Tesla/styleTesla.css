@@ -1,0 +1,66 @@
+body {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Шапка*/
+.header {
+	width: 100%;
+}
+.header__logo {
+	width: 15%;
+	float: left;
+}
+.header__nav_center {
+	width: 30%;
+	float: left;
+	margin-left: 10%;
+}
+.header__nav_right {
+	width: 15%;
+	float: right;
+}
+.modelS {
+	position: relative;
+}
+.modelS svg {
+	position: absolute;
+	bottom: -1px;
+	left: -7px;
+}
+.header__tittle {
+	clear: left;
+	text-align: center;
+}
+.header__text {
+	text-align: center;
+}
+/*Основное изображение*/
+.teslaModelS {
+	max-width: 968px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 500px;
+}
+.teslaModelS__mainImg {
+	max-width: 968px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.teslaModelS__backImg {
+	width: 1400px;
+	opacity: .1;
+	position: absolute;
+	bottom: 220px;
+	left:-220px;
+	z-index: -1;
+}
+/*Характеристики*/
+.underMain {
+
+	clear: left;
+}
+.underMain__item {
+	clear: left;
+}
