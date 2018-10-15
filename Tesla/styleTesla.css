@@ -56,11 +56,124 @@ body {
 	left:-220px;
 	z-index: -1;
 }
-/*Характеристики*/
+/*Характеристики, стили блоков, элементов*/
 .underMain {
-
 	clear: left;
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
 }
-.underMain__item {
+.underMain__speed {
+	float: left;
+	margin-left: 20px;
+	width: 170px;
+	height: 70px;
+}
+.underMain__range {
+	float: left;
+	margin-left: 20px;
+	width: 150px;
+	height: 70px;
+}
+.underMain__test {
+	float: left;
+	margin-left: 20px;
+	width: 150px;
+	height: 70px;
+}
+.underMain__button {
+	float: left;
+	margin-left: 20px;
+	width: 150px;
+	height: 70px;
+}
+.underMain svg {
+	float: left;
+	padding-top: 10px;
+}
+
+
+/*Стили текста в характеристиках*/
+.underMain__text {
+	float: right;
+}
+.underMain__text_big {
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+}
+.underMain__text_mid {
+	font-size: 1.5em;
+}
+.underMain__text_small {
+	font-size: 1em;
+	
+}
+.Triangle {
 	clear: left;
+	width: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Изображение салона */
+.future {
+	position: relative;
+}
+.future__img {
+	z-index: -1;
+	left: 0;
+	top: 0;	
+}
+.future__Model_tittle {
+	z-index: 1;
+	position: absolute;
+	top: 10px;
+	left: 80px;
+	color: #E51937;
+	font-size: 70px;
+}
+/*Правая колонка*/
+.future__aside {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 400px;
+	height: 844px;
+	background-color: #E51937;
+}
+
+/*Изображение корпуса */
+.security {
+	position: relative;
+}
+.carFrame {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.carFrame__mainImg {
+	z-index: -1;	
+	top: 0;
+	right: 0;
+	max-width: 1000px;
+}
+.carFrame__backImg {
+	z-index: -2;
+	top: 0;
+	right: 0;
+	max-width: 1000px;
+}
+
+
+
+/*Левая колонка*/
+.security__aside {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 400px;
+	height: 844px;
+	background-color: #E51937;
 }
