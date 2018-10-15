@@ -138,7 +138,7 @@ body {
 	position: absolute;
 	top:0;
 	right: 0;
-	width: 400px;
+	width: 450px;
 	height: 844px;
 	background-color: #E51937;
 }
@@ -151,19 +151,26 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
+	width: 100%;
 }
 
 .carFrame__mainImg {
-	z-index: -1;	
-	top: 0;
-	right: 0;
+	display: block;
+	position: absolute;
+	z-index: 2;	
+	top: 200px;
+	right: 50px;
 	max-width: 1000px;
+	height: auto;
 }
 .carFrame__backImg {
-	z-index: -2;
-	top: 0;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 100px;
 	right: 0;
 	max-width: 1000px;
+	height: auto;
 }
 
 
@@ -173,7 +180,7 @@ body {
 	position: absolute;
 	top:0;
 	left: 0;
-	width: 400px;
+	width: 450px;
 	height: 844px;
 	background-color: #E51937;
 }
