@@ -7,12 +7,12 @@ body {
 /*Шапка*/
 .navBar {
 	width: 1341px;
-	margin-left: auto;
-	margin-right: auto; 
+	margin: 24px auto 58px auto;
 	height: 51px;
 	display: flex;
 	font-size: 15px;
 	line-height: 18px;
+	font-family: MontserratSemiBold;
 }
 .navBar__logo {
 	width: 166px;	
@@ -33,8 +33,7 @@ body {
 }
 .navBar__modelS svg {
 	position: absolute;
-	left: -3px;
-	bottom: 1px;
+	bottom: -6px;
 }
 .navBar__model {
 	display: inline;
@@ -67,29 +66,36 @@ body {
 .header__tittle {
 	clear: left;
 	text-align: center;
+	font-size: 90px;
+	line-height: 110px;
+	font-family: MontserratSemiBold;
+	margin: 0 auto 0 auto;
 }
 .header__text {
 	text-align: center;
+	height: 19px;
+	margin: -10px auto 27px auto;
+	font-size: 15px;
+	line-height: 18px;
+	font-family: MontserratMedium;
 }
 /*Основное изображение*/
 .teslaModelS {
-	max-width: 968px;
-	margin-left: auto;
-	margin-right: auto;
 	position: relative;
-	height: 500px;
+	margin-bottom: 25px;
 }
 .teslaModelS__mainImg {
+	display: block;
 	max-width: 968px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .teslaModelS__backImg {
-	width: 1400px;
+	width: 1514px;
 	opacity: .1;
 	position: absolute;
-	bottom: 220px;
-	left:-220px;
+	bottom: 127px;
+	left: -37px;
 	z-index: -1;
 }
 /*Характеристики под основным изображением; стили блоков, элементов*/
@@ -125,18 +131,21 @@ body {
 	display: inline-block;
 	font-size: 35px;
 	line-height: 43px;
+	font-family: MontserratSemiBold;
 	margin: -9px 0 0 14px;
 }
 .underMain__text_mid {
 	display: inline-block;
 	font-size: 20px;
 	line-height: 24px;
+	font-weight: 600;
 }
 .underMain__text_small {
 	display: block;
 	font-size: 12px;
 	line-height: 15px;
 	margin: -3px 0 0 14px;
+	font-family: MontserratRegular;
 }
 
 /*Характеристики под основным изображением; кнопки*/
@@ -145,14 +154,14 @@ body {
 	height: 40px;
 	color: black;
 	display: inline-flex;
-	align-items:  center;
+	align-items: center;
 	margin-left: 105px;
-}
-.underMain__test svg {
-
 }
 .underMain__testText {
 	padding-left: 10px; 
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
 }
 .underMain__whiteButton {
 	text-decoration: none;
@@ -164,6 +173,9 @@ body {
 	justify-content: center;
 	outline: 2px solid #E51937;
 	margin-left: 40px;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
 }
 
 /*Изображение салона */
@@ -172,20 +184,24 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	height: 844px;
+	height: 900px;
 }
 .future__img {
+	position: absolute;
 	z-index: -1;
 	left: 0;
-	top: 0;	
+	bottom: 0;	
 }
 .future__Model_tittle {
 	z-index: 1;
 	position: absolute;
-	top: 10px;
+	margin:0;
+	bottom: 750px;
 	left: 80px;
 	color: #E51937;
 	font-size: 70px;
+	line-height: 85px;
+	font-family: MontserratSemiBold;
 }
 /*Правая колонка*/
 .future__aside {
@@ -193,7 +209,7 @@ body {
 	top:0;
 	right: 0;
 	width: 440px;
-	height: 844px;
+	height: 900px;
 	background-color: #E51937;
 	color: #FFFFFF;
 }
@@ -201,13 +217,13 @@ body {
 	text-align: center;
 	margin: 51px 72px 11px 52px;
 	font-size: 30px;
-	font-weight: 600;
+	font-family: MontserratSemiBold;
 	line-height: 37px;
 }
 .future__mainText {
 	margin: 0 72px 66px 52px;
 	font-size: 15px;
-	font-style: medium;
+	font-family: MontserratMedium;
 	line-height: 18px;
 }
 /*Правая колонка - особенности*/
@@ -217,14 +233,33 @@ body {
 	align-items: stretch;
 }
 .future__text {
+	margin: -10px 0 0 19px;
+}
+.future__textOnlyMid  {
 	margin: -4px 0 0 19px;
 }
+.future_text_big {
+	font-size: 35px;
+	line-height: 43px;
+	font-family: MontserratSemiBold;
+}
+.future_text_mid {
+	font-size: 20px;
+	line-height: 24px;
+	font-family: MontserratSemiBold;
+}
+.future_text_small {
+	font-size: 12px;
+	line-height: 15px;
+	font-family: MontserratRegular;
+}
+
+
 /*Правая колонка - кнопки*/
 .future__buttons {
 	margin: 136px 0 0 49px;
 	display: inline-flex;
 	align-items: center;
-
 }
 .future__knowMoreBox { 		/*Добавил блок-обертку, чтобы сравнять по вертикали*/ 
 	width: 160px;			/*"узнать больше" и "заказать", так, чтобы ссылка*/
@@ -244,6 +279,9 @@ body {
 }
 .future__knowMoreText {
 	padding-left: 10px; 
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
 }
 .future__redButton {
 	text-decoration: none;
@@ -254,21 +292,10 @@ body {
 	width: 160px;
 	justify-content: center;
 	outline: 2px solid #FFFFFF;
-
-	
-	
-
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*Изображение корпуса */
 .security {
@@ -277,34 +304,180 @@ body {
 	padding: 0;
 }
 .carFrame {
+	position: relative;
+	width: 100%;
+}
+.carFrame__Img {
 	position: absolute;
-	top: 0;
+	z-index: 2;	
+	top: 223px;	
+	right: 46px;
+	width: 1049px;
+	height: 540px;
+}
+.carFrame__backTittle {
+	position: absolute;
+	top: 97px;
 	right: 0;
+	font-size: 200px;
+	line-height: 244px;
+	font-family: MontserratSemiBold;
+	opacity: .1;
+	color: #E51937;
 }
 
-.carFrame__mainImg {
+/*Указатели*/
+.carFrame__front_stick {
 	position: absolute;
-	z-index: -1;	
-	top: 0;
-	right: 0;
-	max-width: 1000px;
+	right: 817px;
+	top: 223px;
+	z-index: 3;
 }
-.carFrame__backImg {
+.carFrame__front_text {
 	position: absolute;
-	z-index: -2;
-	top: 0;
-	right: 0;
-	max-width: 1000px;
+	right: 656px;
+	top: 223px;
+	z-index: 3;
+	font-size: 17px;
+	line-height: 15px;
+	font-family: MontserratSemiBold;
 }
-
-
+.carFrame__side_stick {
+	position: absolute;
+	right: 538px;
+	top: 176px;
+	z-index: 3;
+}
+.carFrame__side_text {
+	position: absolute;
+	right: 377px;
+	top: 176px;
+	z-index: 3;
+	font-size: 17px;
+	line-height: 15px;
+	font-family: MontserratSemiBold;
+}
+.carFrame__under_stick {
+	position: absolute;
+	right: 483px;
+	top: 590px;
+	z-index: 3;
+}
+.carFrame__under_text {
+	position: absolute;
+	right: 247px;
+	top: 677px;
+	z-index: 3;
+	font-size: 17px;
+	line-height: 15px;
+	font-family: MontserratSemiBold;
+}
 
 /*Левая колонка*/
 .security__aside {
 	position: absolute;
 	top:0;
 	left: 0;
-	width: 400px;
-	height: 844px;
+	width: 440px;
+	height: 900px;
 	background-color: #E51937;
+	color: white;
+}
+.security__tittle {
+	margin: 51px 0 12px 56px;
+	font-size:30px;
+	line-height:37px;
+	font-family: MontserratSemiBold;
+}
+.security__text {
+	width: 316px;
+	margin: 0 0 49px 56px;
+	font-size:15px;
+	line-height:18px;
+	font-family: MontserratMedium;
+}
+.security__tittleMark {
+	margin: 0 0 29px 56px;
+	font-size:30px;
+	line-height:37px;
+	font-family: MontserratSemiBold;
+}
+.security__item {
+	margin: 0 0 16px 56px;
+	font-size:17px;
+	line-height:21px;
+	display: block;
+	position: relative;
+	font-family: MontserratBold;
+}
+.security__stars {
+	position: absolute;
+	right: 93px;
+}
+.security__litlle {
+	font-size:10px;
+	line-height:12px;
+	opacity: .7;
+	font-family: MontserratBold;
+}
+.security__shield {
+	margin: 102px 0 60px 56px;
+	display: flex;
+	align-items: stretch;
+	width: 280px;
+	height: 92px;
+}
+.shield_text_huge {
+	font-size: 30px; /*надо подобрать*/
+	line-height: 37px;
+	margin: 0 0 0 23px;
+	font-family: MontserratSemiBold;
+}
+.shield_smallerBig {
+	font-size:25px;
+	line-height:30px;
+	margin: 0 0 0 23px;
+	font-family: MontserratSemiBold;
+}
+.security__buttons {
+	margin: 0px 0 60px 38px;
+}
+
+.security__buttons {
+	margin: 0px 0 60px 38px;
+	display: inline-flex;
+	align-items: center;
+	z-index: 10;
+}
+.security__knowMoreBox { 	/*Добавил блок-обертку, чтобы сравнять по вертикали*/ 
+	width: 160px;			/*"узнать больше" и "заказать", так, чтобы ссылка*/
+	height: 40px;			/*"узнать больше" срабатывала только при наведении*/
+	display: inline-flex;	/*непосредственно на текст*/ 
+	align-items: center;
+}
+.security__knowMore {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	align-items:  center;
+	margin-right: 22px;
+}
+.security__knowMoreText {
+	padding-left: 10px; 
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+}
+.security__redButton {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	align-items: center;
+	height: 40px;
+	width: 160px;
+	justify-content: center;
+	outline: 2px solid #FFFFFF;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
 }
