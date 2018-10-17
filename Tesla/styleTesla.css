@@ -156,6 +156,7 @@ body {
 	display: inline-flex;
 	align-items: center;
 	margin-left: 105px;
+	text-decoration: none;
 }
 .underMain__testText {
 	padding-left: 10px; 
@@ -224,7 +225,7 @@ body {
 	margin: 0 72px 66px 52px;
 	font-size: 15px;
 	font-family: MontserratMedium;
-	line-height: 18px;
+	
 }
 /*Правая колонка - особенности*/
 .future__item {
