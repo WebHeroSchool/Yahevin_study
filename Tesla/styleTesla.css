@@ -1,5 +1,5 @@
 body {
-	max-width: 1440px;
+	width: 1440px;
 	height: 2700px;
 	margin-left: auto;
 	margin-right: auto;
@@ -33,6 +33,7 @@ body {
 }
 .navBar__modelS svg {
 	position: absolute;
+	left: 0;
 	bottom: -6px;
 }
 .navBar__model {
@@ -101,10 +102,10 @@ body {
 /*Характеристики под основным изображением; стили блоков, элементов*/
 .underMain {
 	clear: left;
-	width: 798px;
+	max-width: 798px;
 	margin-left: auto;
 	margin-right: auto; 
-	height: 58px;
+	min-height: 58px;
 	display: flex;
 }
 .underMain__speed {
@@ -138,7 +139,7 @@ body {
 	display: inline-block;
 	font-size: 20px;
 	line-height: 24px;
-	font-weight: 600;
+	font-family: MontserratSemiBold;
 }
 .underMain__text_small {
 	display: block;
@@ -193,7 +194,7 @@ body {
 	left: 0;
 	bottom: 0;	
 }
-.future__Model_tittle {
+.future__model_tittle {
 	z-index: 1;
 	position: absolute;
 	margin:0;
@@ -224,6 +225,7 @@ body {
 .future__mainText {
 	margin: 0 72px 66px 52px;
 	font-size: 15px;
+	line-height: 18px;
 	font-family: MontserratMedium;
 	
 }
@@ -308,7 +310,7 @@ body {
 	position: relative;
 	width: 100%;
 }
-.carFrame__Img {
+.carFrame__img {
 	position: absolute;
 	z-index: 2;	
 	top: 223px;	
@@ -481,4 +483,273 @@ body {
 	font-size: 13px;
 	line-height: 16px;
 	font-family: MontserratBold;
+}
+
+
+/*Мобильная версия*/
+@media (max-width:1439px)  {
+body {
+  	width: 375px;
+	}
+.navBar {
+	width: 100%;
+	margin: 5px 0 30px 0;
+	height: 50px;
+	display: block;
+}
+.navBar__Right {
+	margin:0;
+	float: right;
+}
+.navBar__logo {
+	margin: 0 0 0 2px;
+}
+.navBar__menu {
+	margin: 17.5px 21px 0 0;
+}
+.navBar__Center {
+	display: none;
+}
+.navBar__item {
+	display: none;
+}
+.header__tittle {
+	clear: left;
+	text-align: center;
+	font-size: 50px;
+	line-height: 61px;
+	font-family: MontserratSemiBold;
+	margin: 0 auto 0 auto;
+}
+.header__text {
+	text-align: center;
+	height: 19px;
+	margin: -3px auto 8px auto;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: MontserratMedium;
+}
+.teslaModelS {
+	position: relative;
+	margin-bottom: 34px;
+	width: 100%;
+}
+.teslaModelS__mainImg {
+	max-width: 95.2%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.teslaModelS__backImg {
+	max-width: 119.5%;
+	opacity: .1;
+	position: absolute;
+	bottom: 68px;
+	left: -41px;
+	z-index: -1;
+}
+
+.underMain {
+	clear: left;
+	width: 100%;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto; 
+	display: flex;
+	flex-wrap: wrap;
+}
+.underMain__speed {
+	display: inline-flex;
+	align-items:  stretch;
+	width: 127px;
+	height: 53px;
+	margin: 0 0 0 42px;
+}
+.underMain__speed svg {
+	width: 38px;
+	height: 28px;
+}
+.underMain__range {
+	display: flex;
+	align-items:  stretch;
+	margin-left: 41px;
+	width: 115px;
+	height: 53px;
+	margin: 0 0 0 42px;
+}
+.Triangle {
+	clear: left;
+	width: 28px;
+	margin: 34px 172px 0 175px;
+}
+
+.underMain__text_big {
+	display: inline-block;
+	font-size: 22px;
+	line-height: 43px;
+	margin: -9px 0 0 13.8px;
+}
+.underMain__text_mid {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 18px;
+	font-family: MontserratSemiBold;
+}
+.underMain__text_small {
+	display: block;
+	font-size: 10px;
+	line-height: 12px;
+	margin: -8px 0 0 14px;
+	font-family: MontserratRegular;
+}
+.underMain__test {
+	width: 118px;			
+	height: 40px;
+	color: black;
+	display: inline-flex;
+	align-items: center;
+	margin: 43px 0 0 36px;
+	text-decoration: none;
+}
+.underMain__whiteButton {
+	color: white;
+	background-color: #E51937;
+	margin: 43px 0 0 25px;
+}
+.future {
+	position: relative;
+	width: 100%;
+	height: 552px;
+}
+.future__img {
+	width: 375px;
+	position: static;
+	margin: 0;
+}
+.future__aside {
+	width: 375px;
+	height: 304px;
+	position: static;
+	display: block;
+	margin: -5px 0 0 0;
+}
+.future__model_tittle {
+	display: none;
+}
+.future__tittle {
+	margin: 0px 33px 9px 26px;
+	padding-top: 18px;
+}
+.future__mainText {
+	margin: 0 33px 34px 26px;
+}
+.future__item {
+	display: none;
+}
+.future__buttons {
+	display: none;
+}
+.security {
+	position: static;
+	width: 100%;
+	height: 598px;
+}
+.carFrame {
+	position: relative;
+	height: 294px;
+	overflow: hidden;
+
+}
+.carFrame__img {
+	position: static;
+	width: 361.8px;
+	height: 186.2px;
+	margin: 75.4px 15.3px 32.3px -2px;
+	z-index: 2;
+}
+.carFrame__backTittle {
+	display: block;
+	width: 500px;
+	font-size: 100px;
+	line-height: 122px;
+	top:25px;
+	left: -8px;
+	z-index: -1;
+}
+.carFrame__front_stick {
+	position: absolute;
+	top: 75.46px;
+	left: 88.94px;	
+}
+.carFrame__front_stick svg {
+	width: 4.8px;
+	height: 96.9px;
+}
+.carFrame__front_text {
+	position: absolute;
+	top: 74.1px;
+	left: 95.8px;
+	font-size: 7px;
+	line-height: 6px;
+	right: 0;
+}
+.carFrame__side_stick {
+	position: absolute;
+	top: 59.25px;
+	left: 185.2px;	
+}
+.carFrame__side_stick svg {
+	width: 4.8px;
+	height: 45.5px;
+}
+.carFrame__side_text {
+	position: absolute;
+	top: 57.5px;
+	left: 190.7px;	
+	font-size: 7px;
+	line-height: 6px;
+	right: 0;
+}
+ .carFrame__under_stick {
+	position: absolute;
+	top: 202px;
+	left: 204.1px;
+}
+.carFrame__under_stick svg {
+	width: 4.8px;
+	height: 40.7px;
+}
+.carFrame__under_text  {
+	position: absolute;
+	top: 232px;
+	left: 210px;
+	font-size: 7px;
+	line-height: 6px;
+	right: 0;
+}
+.security__aside {
+	width: 375px;
+	height: 304px;
+	position: static;
+	display: block;
+	margin: 0;
+}
+.security__tittle {
+	margin: 0px 28px 11px 31px;
+	padding-top: 18px;
+}
+.security__text {
+	margin: 0 28px 0 31px;
+}
+.security__item {
+	display: none;
+}
+.security__buttons {
+	display: none;
+}
+.security__tittleMark {
+	display: none;
+}
+footer {
+	display: none;
+}
 }
