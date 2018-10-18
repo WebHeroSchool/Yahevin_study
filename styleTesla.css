@@ -1,0 +1,809 @@
+body {
+	width: 1440px;
+	height: 2700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Шапка*/
+.navBar {
+	width: 1341px;
+	margin: 24px auto 58px auto;
+	height: 51px;
+	display: flex;
+	font-size: 15px;
+	line-height: 18px;
+	font-family: MontserratSemiBold;
+}
+.navBar__logo {
+	width: 166px;	
+}
+.navBar__Center {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	margin: 0 0 0 271px;
+}
+.navBar__modelS {
+	width: 62px;
+	padding: 0;
+	display: inline;
+	position: relative;
+	text-decoration: none;
+	color: #E51937;
+}
+.navBar__modelS svg {
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+}
+.navBar__model {
+	display: inline;
+	text-decoration: none;
+	margin: 0 0 0 44px;
+	color: black;
+}
+.navBar__modelE {
+	display: inline;
+	text-decoration: none;
+	margin: 0 0 0 46px;
+	color: black;
+}
+.navBar__Right {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 212px;
+}
+.navBar__item {
+	display: inline;
+	text-decoration: none;
+	color: black;
+	margin: 0 30px 0 0;
+}
+
+/*Приветствие*/
+.header__tittle {
+	clear: left;
+	text-align: center;
+	font-size: 90px;
+	line-height: 110px;
+	font-family: MontserratSemiBold;
+	margin: 0 auto 0 auto;
+}
+.header__text {
+	text-align: center;
+	height: 19px;
+	margin: -10px auto 27px auto;
+	font-size: 15px;
+	line-height: 18px;
+	font-family: MontserratMedium;
+}
+/*Основное изображение*/
+.teslaModelS {
+	position: relative;
+	margin-bottom: 38px;
+}
+.teslaModelS__mainImg {
+	display: block;
+	max-width: 968px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.teslaModelS__backImg {
+	width: 1514px;
+	opacity: .1;
+	position: absolute;
+	bottom: 127px;
+	left: -37px;
+	z-index: -1;
+}
+/*Характеристики под основным изображением; стили блоков, элементов*/
+.underMain {
+	clear: left;
+	max-width: 798px;
+	margin-left: auto;
+	margin-right: auto; 
+	min-height: 58px;
+	display: flex;
+}
+.underMain__speed {
+	display: inline-flex;
+	align-items:  stretch;
+	width: 154px;
+	height: 58px;
+	margin: 1px 0 0 -1px;
+}
+.underMain__range {
+	display: flex;
+	align-items:  stretch;
+	margin-left: 81px;
+	width: 140px;
+	height: 58px;
+}
+.underMain__range svg {
+	margin: -2px  -2px 0 0; 
+}
+.Triangle {
+	clear: left;
+	width: 20px;
+	margin: 23px auto 31px 702px;
+}
+
+/*Стили текста в характеристиках*/
+.underMain__text_big {
+	display: inline-block;
+	font-size: 35px;
+	line-height: 43px;
+	font-family: MontserratSemiBold;
+	margin: -9px 0 0 14px;
+}
+.underMain__text_mid {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 24px;
+	font-family: MontserratSemiBold;
+	margin-left: 3px;
+}
+.underMain__text_small {
+	display: block;
+	font-size: 12px;
+	line-height: 15px;
+	margin: -1px 0 0 14px;
+	font-family: MontserratRegular;
+}
+.underMain__textRange {
+	margin-left: -3px;
+}
+
+/*Характеристики под основным изображением; кнопки*/
+.underMain__test {
+	width: 118px;			
+	height: 40px;
+	color: black;
+	display: inline-flex;
+	align-items: center;
+	margin-left: 105px;
+	text-decoration: none;
+}
+.underMain__testText { 
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+	margin: 3px 0 0 6px;
+}
+.underMain__whiteButton {
+	text-decoration: none;
+	color: #E51937;
+	display: inline-flex;
+	align-items: center;
+	height: 38px;
+	width: 158px;
+	justify-content: center;
+	border: 2px solid #E51937;
+	margin-left: 40px;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+}
+
+/*Изображение салона */
+.future {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 900px;
+}
+.future__img {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 0;	
+}
+.future__model_tittle {
+	z-index: 1;
+	position: absolute;
+	margin:0;
+	bottom: 750px;
+	left: 80px;
+	color: #E51937;
+	font-size: 70px;
+	line-height: 85px;
+	font-family: MontserratSemiBold;
+}
+/*Правая колонка*/
+.future__aside {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 440px;
+	height: 900px;
+	background-color: #E51937;
+	color: #FFFFFF;
+}
+.future__tittle {
+	text-align: center;
+	margin: 51px 72px 11px 52px;
+	font-size: 30px;
+	font-family: MontserratSemiBold;
+	line-height: 37px;
+}
+.future__mainText {
+	margin: 0 72px 68px 52px;
+	font-size: 15px;
+	font-family: MontserratMedium;
+}
+/*Правая колонка - особенности*/
+.future__item {
+	margin: 0 0 35px 52px;
+	display: flex;
+	align-items: stretch;
+}
+.future__svgA {
+	margin: 2px 0 0 0;
+}
+.future__svgB {
+	margin: 16px 4px 0 -4px;
+}
+.future__svgC {
+	margin: 3px 4px 0 0;
+}
+.future__text {
+	margin: -10px 0 0 19px;
+}
+.future__textOnlyMid  {
+	margin: -4px 0 0 19px;
+}
+.future_text_big {
+	font-size: 35px;
+	line-height: 43px;
+	font-family: MontserratSemiBold;
+}
+.future_text_mid {
+	font-size: 20px;
+	line-height: 0;
+	font-family: MontserratSemiBold;
+}
+.future_text_small {
+	display: block;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: MontserratRegular;
+	margin: -1px 0 0 0;
+}
+
+
+/*Правая колонка - кнопки*/
+.future__buttons {
+	margin: 136px 0 0 49px;
+	display: inline-flex;
+	align-items: center;
+}
+.future__knowMoreBox { 		/*Добавил блок-обертку, чтобы сравнять по вертикали*/ 
+	width: 160px;			/*"узнать больше" и "заказать", так, чтобы ссылка*/
+	height: 40px;			/*"узнать больше" срабатывала только при наведении*/
+	display: inline-flex;	/*непосредственно на текст*/ 
+	align-items: center;
+	margin: 0 26px 0 0;
+}
+.future__knowMore {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	align-items:  center;
+}
+.future__knowMore svg {
+
+}
+.future__knowMoreText {
+	padding-left: 8px; 
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+}
+.future__redButton {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	align-items: center;
+	height: 36px;
+	width: 158px;
+	justify-content: center;
+	border: 2px solid #FFFFFF;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+}
+
+/*Изображение корпуса */
+.security {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 900px;
+}
+.carFrame {
+	position: relative;
+	width: 100%;
+}
+.carFrame__img {
+	position: absolute;
+	z-index: 2;	
+	top: 223px;	
+	right: 46px;
+	width: 1049px;
+	height: 540px;
+}
+.carFrame__backTittle {
+	position: absolute;
+	top: 97px;
+	right: 0;
+	font-size: 200px;
+	line-height: 244px;
+	font-family: MontserratSemiBold;
+	opacity: .1;
+	color: #E51937;
+}
+
+/*Указатели*/
+.carFrame__front_stick {
+	position: absolute;
+	right: 817px;
+	top: 223px;
+	z-index: 3;
+}
+.carFrame__front_text {
+	position: absolute;
+	right: 660px;
+	top: 221px;
+	z-index: 3;
+	font-size: 17px;
+	line-height: 15px;
+	font-family: MontserratSemiBold;
+}
+.carFrame__side_stick {
+	position: absolute;
+	right: 538px;
+	top: 176px;
+	z-index: 3;
+}
+.carFrame__side_text {
+	position: absolute;
+	right: 386px;
+	top: 174px;
+	z-index: 3;
+	font-size: 17px;
+	line-height: 15px;
+	font-family: MontserratSemiBold;
+}
+.carFrame__under_stick {
+	position: absolute;
+	right: 483px;
+	top: 590px;
+	z-index: 3;
+}
+.carFrame__under_text {
+	position: absolute;
+	right: 254px;
+	top: 680px;
+	z-index: 3;
+	font-size: 17px;
+	line-height: 15px;
+	font-family: MontserratSemiBold;
+}
+
+/*Левая колонка*/
+.security__aside {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 440px;
+	height: 900px;
+	background-color: #E51937;
+	color: white;
+}
+.security__tittle {
+	margin: 51px 0 12px 56px;
+	font-size:30px;
+	line-height:37px;
+	font-family: MontserratSemiBold;
+}
+.security__text {
+	width: 316px;
+	margin: 0 0 55px 56px;
+	font-size:15px;
+	font-family: MontserratMedium;
+}
+.security__tittleMark {
+	margin: 0 0 29px 56px;
+	font-size:30px;
+	line-height:37px;
+	font-family: MontserratSemiBold;
+}
+.security__item {
+	margin: 0 0 16px 56px;
+	font-size:17px;
+	line-height:21px;
+	display: block;
+	position: relative;
+	font-family: MontserratBold;
+}
+.security__stars {
+	position: absolute;
+	right: 93px;
+	top: -3px;
+}
+.security__litlle {
+	font-size:10px;
+	line-height:12px;
+	opacity: .7;
+	font-family: MontserratBold;
+	display: inline-block;
+	margin: 0 0 0 3px;
+}
+.security__shield {
+	margin: 112px 0 40px 66px;
+	display: flex;
+	align-items: stretch;
+	width: 280px;
+	height: 92px;
+}
+.shield_text{
+	display: inline-grid;
+}
+.shield_text_huge {
+	font-size: 50px; 
+	line-height: 37px;
+	margin: 2px 0 0 23px;
+	font-family: MontserratSemiBold;
+}
+.shield_smallerBig {
+	font-size: 25px;
+	margin: -12px 0 0 23px;
+	font-family: MontserratSemiBold;
+}
+.security__buttons {
+	margin: 0 0 0 38px;
+	display: inline-flex;
+	align-items: center;
+}
+.security__knowMoreBox { 	
+	width: 160px;		
+	height: 40px;		
+	display: inline-flex;	
+	align-items: center;
+	margin: 0 26px 0 0;
+}
+.security__knowMore {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	align-items:  center;
+}
+.security__knowMoreText {
+	padding-left: 9px; 
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+}
+.security__redButton {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	align-items: center;
+	height: 36px;
+	width: 158px;
+	justify-content: center;
+	border: 2px solid #FFFFFF;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+}
+.footer {
+	float: right;
+	font-size: 8px;
+	z-index: 100;
+	margin: -43px 24px 0 0;
+	font-family: MontserratBold;
+}
+.webHero {
+	font-size: 16px;
+	display: inline-block;
+	padding: 0 0 0 5px;
+	font-family: MontserratBold;
+	color: #FFD22E;
+}
+.school {
+	font-size: 9px;
+	float: right;
+	margin: -2px 1px 0 0;
+	font-family: MontserratBold;
+}
+
+/*Мобильная версия*/
+@media (max-width:1439px) {
+body {width: 375px;
+}
+.navBar {
+	width: 100%;
+	margin: 5px 0 23px 0;
+	height: 50px;
+	display: block;
+}
+.navBar__Right {
+	margin:0;
+	float: right;
+}
+.navBar__logo {
+	margin: 0 0 0 2px;
+	width: 138px;
+}
+.navBar__menu {
+	margin: 15px 22px 0 0;
+}
+.navBar__Center {
+	display: none;
+}
+.navBar__item {
+	display: none;
+}
+.header__tittle {
+	clear: left;
+	text-align: center;
+	font-size: 50px;
+	line-height: 61px;
+	font-family: MontserratSemiBold;
+	margin: 0 auto 0 auto;
+}
+.header__text {
+	text-align: center;
+	height: 19px;
+	margin: -2px 2px 42px 0;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: MontserratMedium;
+}
+.teslaModelS {
+	position: relative;
+	margin-bottom: 34px;
+	width: 100%;
+}
+.teslaModelS__mainImg {
+	max-width: 95.2%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.teslaModelS__backImg {
+	max-width: 119.5%;
+	opacity: .1;
+	position: absolute;
+	bottom: 68px;
+	left: -41px;
+	z-index: -1;
+}
+.underMain {
+	clear: left;
+	width: 100%;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto; 
+	display: flex;
+	flex-wrap: wrap;
+}
+.underMain__speed {
+	display: inline-flex;
+	align-items:  stretch;
+	width: 127px;
+	height: 53px;
+	margin: 0 0 0 42px;
+}
+.underMain__speed svg {
+	width: 38px;
+	height: 28px;
+}
+.underMain__range {
+	display: flex;
+	align-items:  stretch;
+	margin-left: 41px;
+	width: 115px;
+	height: 53px;
+	margin: 0 0 0 42px;
+}
+.underMain__range svg {
+	width: 25.3px;
+	height: 41px;
+	margin: -6px 0 0 0;
+}
+.Triangle {
+	clear: left;
+	width: 28px;
+	margin: 31px 172px -6px 172px;
+}
+.underMain__text_big {
+	display: inline-block;
+	font-size: 26px;
+	line-height: .3;
+	margin: 5px 0 0 13.8px;
+}
+.underMain__text_mid {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 18px;
+	font-family: MontserratSemiBold;
+	margin-left: 6px;
+}
+.underMain__text_small {
+	display: block;
+	font-size: 10px;
+	line-height: 12px;
+	margin: 3px 0 0 14px;
+	font-family: MontserratRegular;
+}
+.underMain__test {
+	width: 118px;			
+	height: 40px;
+	color: #E51937;
+	display: inline-flex;
+	align-items: center;
+	margin: 26px 0 0 36px;
+	text-decoration: none;
+}
+.underMain__test svg path {
+	fill: #E51937;
+}
+.underMain__testText {
+	margin: 1px 0 0 7px;
+}
+.underMain__whiteButton {
+	color: white;
+	background-color: #E51937;
+	margin: 26px 0 0 25px;
+	height: 36px;
+}
+.future {
+	position: relative;
+	width: 100%;
+	height: 641px;
+	overflow: hidden;
+}
+.future__img {
+	width: 513px;
+	height: 337px;
+	position: static;
+	margin: 0 0 0 -45px;
+}
+.future__aside {
+	width: 375px;
+	height: 304px;
+	position: static;
+	display: inline-block;
+	margin: -16px 0 0 0;
+}
+.future__model_tittle {
+	display: none;
+}
+.future__tittle {
+	margin: 0px 33px 9px 26px;
+	padding-top: 18px;
+}
+.future__mainText {
+	margin: 0 33px 34px 26px;
+	line-height: 19px;
+}
+.future__item {
+	display: none;
+}
+.future__buttons {
+	display: none;
+}
+.security {
+	position: static;
+	width: 100%;
+	height: 598px;
+	margin: 12.2px 0 0 0;
+}
+.carFrame {
+	position: relative;
+	height: 294px;
+	overflow: hidden;
+	margin: 0 0 0 -1px;
+}
+.carFrame br {
+	display: none;
+}
+.carFrame__img {
+	position: static;
+	width: 361.8px;
+	height: 186.2px;
+	margin: 75.4px 15.3px 32.3px -2px;
+	z-index: 2;
+}
+.carFrame__backTittle {
+	display: block;
+	width: 500px;
+	font-size: 100px;
+	line-height: 122px;
+	top:25px;
+	left: -8px;
+	z-index: -1;
+}
+.carFrame__front_stick {
+	position: absolute;
+	top: 75.46px;
+	left: 88.94px;	
+}
+.carFrame__front_stick svg {
+	width: 4.8px;
+	height: 96.9px;
+}
+.carFrame__front_text {
+	position: absolute;
+	top: 76px;
+	left: 95.8px;
+	font-size: 7px;
+	line-height: 6px;
+	right: 0;
+	width: 60px;
+}
+.carFrame__side_stick {
+	position: absolute;
+	top: 59.25px;
+	left: 185.2px;	
+}
+.carFrame__side_stick svg {
+	width: 4.8px;
+	height: 45.5px;
+}
+.carFrame__side_text {
+	position: absolute;
+	top: 59.5px;
+	left: 190.7px;	
+	font-size: 7px;
+	line-height: 6px;
+	right: 0;
+	width: 60px;
+}
+ .carFrame__under_stick {
+	position: absolute;
+	top: 202px;
+	left: 204.1px;
+}
+.carFrame__under_stick svg {
+	width: 4.8px;
+	height: 40.7px;
+}
+.carFrame__under_text  {
+	position: absolute;
+	top: 233px;
+	left: 210px;
+	font-size: 7px;
+	line-height: 6px;
+	right: 0;
+	width: 80px;
+}
+.security__aside {
+	width: 375px;
+	height: 304px;
+	position: static;
+	display: block;
+	margin: 0;
+}
+.security__tittle {
+	margin: 0px 28px 11px 31px;
+	padding-top: 18px;
+}
+.security__text {
+	margin: 0 28px 0 31px;
+}
+.security__item {
+	display: none;
+}
+.security__buttons {
+	display: none;
+}
+.security__tittleMark {
+	display: none;
+}
+footer {
+	display: none;
+}
+}
