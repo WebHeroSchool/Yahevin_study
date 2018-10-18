@@ -509,7 +509,7 @@ body {
 	font-size: 8px;
 	z-index: 100;
 	margin: -43px 24px 0 0;
-	font-family: Montserrat;
+	font-family: MontserratBold;
 }
 .webHero {
 	font-size: 16px;
@@ -533,7 +533,7 @@ body {
 	}
 .navBar {
 	width: 100%;
-	margin: 5px 0 30px 0;
+	margin: 5px 0 23px 0;
 	height: 50px;
 	display: block;
 }
@@ -543,9 +543,10 @@ body {
 }
 .navBar__logo {
 	margin: 0 0 0 2px;
+	width: 138px;
 }
 .navBar__menu {
-	margin: 17.5px 21px 0 0;
+	margin: 15px 22px 0 0;
 }
 .navBar__Center {
 	display: none;
@@ -564,7 +565,7 @@ body {
 .header__text {
 	text-align: center;
 	height: 19px;
-	margin: -3px auto 8px auto;
+	margin: -2px 2px 42px 0;
 	font-size: 10px;
 	line-height: 12px;
 	font-family: MontserratMedium;
@@ -616,61 +617,76 @@ body {
 	height: 53px;
 	margin: 0 0 0 42px;
 }
+.underMain__range svg {
+	width: 25.3px;
+	height: 41px;
+	margin: -6px 0 0 0;
+}
 .Triangle {
 	clear: left;
 	width: 28px;
-	margin: 34px 172px 0 175px;
+	margin: 31px 172px -6px 172px;
 }
 
 .underMain__text_big {
 	display: inline-block;
-	font-size: 22px;
-	line-height: 43px;
-	margin: -9px 0 0 13.8px;
+	font-size: 26px;
+	line-height: .3;
+	margin: 5px 0 0 13.8px;
 }
 .underMain__text_mid {
 	display: inline-block;
 	font-size: 15px;
 	line-height: 18px;
 	font-family: MontserratSemiBold;
+	margin-left: 6px;
 }
 .underMain__text_small {
 	display: block;
 	font-size: 10px;
 	line-height: 12px;
-	margin: -8px 0 0 14px;
+	margin: 3px 0 0 14px;
 	font-family: MontserratRegular;
 }
 .underMain__test {
 	width: 118px;			
 	height: 40px;
-	color: black;
+	color: #E51937;
 	display: inline-flex;
 	align-items: center;
-	margin: 43px 0 0 36px;
+	margin: 26px 0 0 36px;
 	text-decoration: none;
+}
+.underMain__test svg path {
+	fill: #E51937;
+}
+.underMain__testText {
+	margin: 1px 0 0 7px;
 }
 .underMain__whiteButton {
 	color: white;
 	background-color: #E51937;
-	margin: 43px 0 0 25px;
+	margin: 26px 0 0 25px;
+	height: 36px;
 }
 .future {
 	position: relative;
 	width: 100%;
-	height: 552px;
+	height: 641px;
+	overflow: hidden;
 }
 .future__img {
-	width: 375px;
+	width: 513px;
+	height: 337px;
 	position: static;
-	margin: 0;
+	margin: 0 0 0 -45px;
 }
 .future__aside {
 	width: 375px;
 	height: 304px;
 	position: static;
-	display: block;
-	margin: -5px 0 0 0;
+	display: inline-block;
+	margin: -16px 0 0 0;
 }
 .future__model_tittle {
 	display: none;
@@ -681,6 +697,7 @@ body {
 }
 .future__mainText {
 	margin: 0 33px 34px 26px;
+	line-height: 19px;
 }
 .future__item {
 	display: none;
@@ -692,12 +709,16 @@ body {
 	position: static;
 	width: 100%;
 	height: 598px;
+	margin: 12.2px 0 0 0;
 }
 .carFrame {
 	position: relative;
 	height: 294px;
 	overflow: hidden;
-
+	margin: 0 0 0 -1px;
+}
+.carFrame br {
+	display: none;
 }
 .carFrame__img {
 	position: static;
@@ -726,11 +747,12 @@ body {
 }
 .carFrame__front_text {
 	position: absolute;
-	top: 74.1px;
+	top: 76px;
 	left: 95.8px;
 	font-size: 7px;
 	line-height: 6px;
 	right: 0;
+	width: 60px;
 }
 .carFrame__side_stick {
 	position: absolute;
@@ -743,11 +765,12 @@ body {
 }
 .carFrame__side_text {
 	position: absolute;
-	top: 57.5px;
+	top: 59.5px;
 	left: 190.7px;	
 	font-size: 7px;
 	line-height: 6px;
 	right: 0;
+	width: 60px;
 }
  .carFrame__under_stick {
 	position: absolute;
@@ -760,11 +783,12 @@ body {
 }
 .carFrame__under_text  {
 	position: absolute;
-	top: 232px;
+	top: 233px;
 	left: 210px;
 	font-size: 7px;
 	line-height: 6px;
 	right: 0;
+	width: 80px;
 }
 .security__aside {
 	width: 375px;
