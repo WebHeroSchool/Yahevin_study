@@ -59,9 +59,6 @@ body {
 	color: black;
 	margin: 0 30px 0 0;
 }
-.navBar__menu svg {
-	
-}
 
 /*Приветствие*/
 .header__tittle {
@@ -454,7 +451,7 @@ body {
 	display: inline-grid;
 }
 .shield_text_huge {
-	font-size: 50px; /*надо подобрать*/
+	font-size: 50px; 
 	line-height: 37px;
 	margin: 2px 0 0 23px;
 	font-family: MontserratSemiBold;
@@ -469,10 +466,10 @@ body {
 	display: inline-flex;
 	align-items: center;
 }
-.security__knowMoreBox { 	/*Добавил блок-обертку, чтобы сравнять по вертикали*/ 
-	width: 160px;			/*"узнать больше" и "заказать", так, чтобы ссылка*/
-	height: 40px;			/*"узнать больше" срабатывала только при наведении*/
-	display: inline-flex;	/*непосредственно на текст*/ 
+.security__knowMoreBox { 	
+	width: 160px;		
+	height: 40px;		
+	display: inline-flex;	
 	align-items: center;
 	margin: 0 26px 0 0;
 }
@@ -481,9 +478,6 @@ body {
 	color: #FFFFFF;
 	display: inline-flex;
 	align-items:  center;
-}
-.security__knowMore svg {
-
 }
 .security__knowMoreText {
 	padding-left: 9px; 
@@ -525,12 +519,10 @@ body {
 	font-family: MontserratBold;
 }
 
-
 /*Мобильная версия*/
-@media (max-width:1439px)  {
-body {
-  	width: 375px;
-	}
+@media (max-width:1439px) {
+body {width: 375px;
+}
 .navBar {
 	width: 100%;
 	margin: 5px 0 23px 0;
@@ -588,7 +580,6 @@ body {
 	left: -41px;
 	z-index: -1;
 }
-
 .underMain {
 	clear: left;
 	width: 100%;
@@ -627,7 +618,6 @@ body {
 	width: 28px;
 	margin: 31px 172px -6px 172px;
 }
-
 .underMain__text_big {
 	display: inline-block;
 	font-size: 26px;
