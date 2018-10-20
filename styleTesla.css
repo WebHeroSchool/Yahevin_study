@@ -1,18 +1,20 @@
+@media (min-width: 1024px) {
 body {
-	width: 1440px;
+	width: 100%;
 	height: 2700px;
 	margin-left: auto;
 	margin-right: auto;
 }
 /*Шапка*/
 .navBar {
-	width: 1341px;
+	width: 93.125%;
 	margin: 24px auto 58px auto;
 	height: 51px;
 	display: flex;
 	font-size: 15px;
 	line-height: 18px;
 	font-family: MontserratSemiBold;
+	justify-content: center;
 }
 .navBar__logo {
 	width: 166px;	
@@ -21,7 +23,7 @@ body {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	margin: 0 0 0 271px;
+	margin: 0 auto;
 }
 .navBar__modelS {
 	width: 62px;
@@ -30,11 +32,10 @@ body {
 	position: relative;
 	text-decoration: none;
 	color: #E51937;
-}
-.navBar__modelS svg {
-	position: absolute;
-	left: 0;
-	bottom: -6px;
+	padding: 3px 0 3px 0;
+	border-bottom-right-radius: 10%;
+	border-bottom-left-radius: 10%;
+	border-bottom: 2px solid #E51937;
 }
 .navBar__model {
 	display: inline;
@@ -51,7 +52,6 @@ body {
 .navBar__Right {
 	display: flex;
 	align-items: center;
-	margin: 0 0 0 212px;
 }
 .navBar__item {
 	display: inline;
@@ -79,21 +79,30 @@ body {
 }
 /*Основное изображение*/
 .teslaModelS {
-	position: relative;
+	width: 100%;
+	text-align: center;
+	height: 450px;
 	margin-bottom: 38px;
 }
 .teslaModelS__mainImg {
-	display: block;
+	display: inline-block;
 	max-width: 968px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0px auto 0 auto;
+	z-index: 10;
+}
+.teslaModelS__backbox {
+	position: relative;
+	width: 968px;
+	height: 450px;
+	margin: -450px auto 0 auto;
 }
 .teslaModelS__backImg {
+	display: inline-block;
 	width: 1514px;
 	opacity: .1;
 	position: absolute;
 	bottom: 127px;
-	left: -37px;
+	left: -273px;
 	z-index: -1;
 }
 /*Характеристики под основным изображением; стили блоков, элементов*/
@@ -122,10 +131,18 @@ body {
 .underMain__range svg {
 	margin: -2px  -2px 0 0; 
 }
+.underMaim__promo {
+	display: inline-flex;
+	justify-content: center;
+}
+.underMain__buttons {
+	display: inline-flex;
+	justify-content: center;
+}
 .Triangle {
 	clear: left;
 	width: 20px;
-	margin: 23px auto 31px 702px;
+	margin: 23px auto 31px auto;
 }
 
 /*Стили текста в характеристиках*/
@@ -192,12 +209,18 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 900px;
+	overflow: hiddden;
+}
+.future__imgBox {
+	display: block;
 }
 .future__img {
-	position: absolute;
+	margin:  56px 0 0 0;
 	z-index: -1;
-	left: 0;
-	bottom: 0;	
+	width: 79%;	
+}
+@media (max-width: 1630px) and (min-width: 1024px) {
+	.future__img { width: 1273px;}
 }
 .future__model_tittle {
 	z-index: 1;
@@ -271,7 +294,6 @@ body {
 	margin: -1px 0 0 0;
 }
 
-
 /*Правая колонка - кнопки*/
 .future__buttons {
 	margin: 136px 0 0 49px;
@@ -290,9 +312,6 @@ body {
 	color: #FFFFFF;
 	display: inline-flex;
 	align-items:  center;
-}
-.future__knowMore svg {
-
 }
 .future__knowMoreText {
 	padding-left: 8px; 
@@ -320,10 +339,14 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 900px;
+	width: 100%;
+	background-color: white;
 }
 .carFrame {
-	position: relative;
-	width: 100%;
+	position: absolute;
+	width: 1095px;
+	height: 900px;
+	left: 345px;
 }
 .carFrame__img {
 	position: absolute;
@@ -518,10 +541,14 @@ body {
 	margin: -2px 1px 0 0;
 	font-family: MontserratBold;
 }
+}
 
 /*Мобильная версия*/
-@media (max-width:1439px) {
-body {width: 375px;
+@media (max-width: 1023px) {
+body {
+	width: 100%;
+	min-width: 355px;
+	margin: 0;
 }
 .navBar {
 	width: 100%;
@@ -532,6 +559,8 @@ body {width: 375px;
 .navBar__Right {
 	margin:0;
 	float: right;
+	display: flex;
+	align-items: center;
 }
 .navBar__logo {
 	margin: 0 0 0 2px;
@@ -572,12 +601,19 @@ body {width: 375px;
 	margin-left: auto;
 	margin-right: auto;
 }
+.teslaModelS__backbox {
+	position: relative;
+	width: 95.2%;
+	height: 55vw;
+	margin: -55vw auto 0 auto;
+}
 .teslaModelS__backImg {
-	max-width: 119.5%;
+	display: inline-block;
+	width: 119.5%;
 	opacity: .1;
 	position: absolute;
-	bottom: 68px;
-	left: -41px;
+	top: 10px;
+	left: -12vw;
 	z-index: -1;
 }
 .underMain {
@@ -594,7 +630,7 @@ body {width: 375px;
 	align-items:  stretch;
 	width: 127px;
 	height: 53px;
-	margin: 0 0 0 42px;
+	margin: 0;
 }
 .underMain__speed svg {
 	width: 38px;
@@ -613,12 +649,27 @@ body {width: 375px;
 	height: 41px;
 	margin: -6px 0 0 0;
 }
+.underMaim__promo {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+}
+.underMain__buttons {
+	display: flex;
+	justify-content: center;
+	margin: 26px auto 0 auto;
+	width: 100%;
+}
 .Triangle {
 	clear: left;
 	width: 28px;
-	margin: 31px 172px -6px 172px;
+	margin: 31px auto -6px auto;
 }
 .underMain__text_big {
+	font-size: 35px;
+	line-height: 43px;
+	font-family: MontserratSemiBold;
 	display: inline-block;
 	font-size: 26px;
 	line-height: .3;
@@ -638,45 +689,59 @@ body {width: 375px;
 	margin: 3px 0 0 14px;
 	font-family: MontserratRegular;
 }
+.underMain__textRange {
+	margin-left: -3px;
+}
 .underMain__test {
 	width: 118px;			
 	height: 40px;
-	color: #E51937;
+	color: black;
 	display: inline-flex;
 	align-items: center;
-	margin: 26px 0 0 36px;
 	text-decoration: none;
+	color: #E51937;
 }
 .underMain__test svg path {
 	fill: #E51937;
 }
 .underMain__testText {
 	margin: 1px 0 0 7px;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
 }
 .underMain__whiteButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 	color: white;
+	border: 2px solid #E51937;
 	background-color: #E51937;
-	margin: 26px 0 0 25px;
+	margin: 0 0 0 25px;
 	height: 36px;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: MontserratBold;
+	width: 158px;
 }
 .future {
 	position: relative;
 	width: 100%;
-	height: 641px;
 	overflow: hidden;
 }
 .future__img {
-	width: 513px;
-	height: 337px;
+	width: 100%;
 	position: static;
-	margin: 0 0 0 -45px;
 }
 .future__aside {
-	width: 375px;
-	height: 304px;
+	width: 100%;
+	min-height: 250px;
 	position: static;
 	display: inline-block;
 	margin: -16px 0 0 0;
+	background-color: #E51937;
+	color: #FFFFFF;
 }
 .future__model_tittle {
 	display: none;
@@ -684,10 +749,16 @@ body {width: 375px;
 .future__tittle {
 	margin: 0px 33px 9px 26px;
 	padding-top: 18px;
+	font-size: 30px;
+	font-family: MontserratSemiBold;
+	line-height: 37px;
+	text-align: center;
 }
 .future__mainText {
 	margin: 0 33px 34px 26px;
 	line-height: 19px;
+	font-size: 15px;
+	font-family: MontserratMedium;
 }
 .future__item {
 	display: none;
@@ -698,14 +769,13 @@ body {width: 375px;
 .security {
 	position: static;
 	width: 100%;
-	height: 598px;
 	margin: 12.2px 0 0 0;
 }
 .carFrame {
 	position: relative;
+	width: 375px;
 	height: 294px;
-	overflow: hidden;
-	margin: 0 0 0 -1px;
+	margin: 0 auto 0 auto;
 }
 .carFrame br {
 	display: none;
@@ -716,6 +786,8 @@ body {width: 375px;
 	height: 186.2px;
 	margin: 75.4px 15.3px 32.3px -2px;
 	z-index: 2;
+	top: 223px;
+	right: 46px;
 }
 .carFrame__backTittle {
 	display: block;
@@ -725,11 +797,16 @@ body {width: 375px;
 	top:25px;
 	left: -8px;
 	z-index: -1;
+	position: absolute;
+	font-family: MontserratSemiBold;
+	opacity: .1;
+	color: #E51937;
 }
 .carFrame__front_stick {
 	position: absolute;
 	top: 75.46px;
 	left: 88.94px;	
+
 }
 .carFrame__front_stick svg {
 	width: 4.8px;
@@ -781,18 +858,26 @@ body {width: 375px;
 	width: 80px;
 }
 .security__aside {
-	width: 375px;
-	height: 304px;
+	width: 100%;
+	min-height: 250px;
 	position: static;
 	display: block;
 	margin: 0;
+	background-color: #E51937;
+	color: white;
 }
 .security__tittle {
-	margin: 0px 28px 11px 31px;
+	margin: 0px auto 11px auto;
 	padding-top: 18px;
+	width: 300px;
+	font-size:30px;
+	line-height:37px;
+	font-family: MontserratSemiBold;
 }
 .security__text {
 	margin: 0 28px 0 31px;
+	font-size: 15px;
+	font-family: MontserratMedium;
 }
 .security__item {
 	display: none;
@@ -801,6 +886,9 @@ body {width: 375px;
 	display: none;
 }
 .security__tittleMark {
+	display: none;
+}
+.security__shield {
 	display: none;
 }
 footer {
