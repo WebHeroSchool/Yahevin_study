@@ -81,6 +81,7 @@ body {
 	text-align: center;
 	height: 450px;
 	margin-bottom: 38px;
+	overflow: hidden;
 }
 .teslaModelS__mainImg {
 	display: inline-block;
@@ -599,7 +600,7 @@ body {
 @media (max-width: 1023px) {
 body {
 	width: 100%;
-	min-width: 355px;
+	min-width: 375px;
 	margin: 0;
 }
 .navBar {
@@ -647,6 +648,7 @@ body {
 	position: relative;
 	margin-bottom: 34px;
 	width: 100%;
+	overflow: hidden;
 }
 .teslaModelS__mainImg {
 	max-width: 95.2%;
@@ -788,18 +790,18 @@ body {
 }
 .future__aside {
 	width: 100%;
-	min-height: 250px;
 	position: static;
 	display: inline-block;
 	margin: -16px 0 0 0;
 	background-color: #E51937;
 	color: #FFFFFF;
+	text-align: center;
 }
 .future__model_tittle {
 	display: none;
 }
 .future__tittle {
-	margin: 0px 33px 9px 26px;
+	margin: 15px 33px 15px 26px;
 	padding-top: 18px;
 	font-size: 30px;
 	font-family: MontserratSemiBold;
@@ -807,10 +809,17 @@ body {
 	text-align: center;
 }
 .future__mainText {
-	margin: 0 33px 34px 26px;
+	margin: 0 33px 0 26px;
 	line-height: 19px;
 	font-size: 15px;
 	font-family: MontserratMedium;
+	text-align: justify;
+	width: 85%;
+	padding-bottom: 34px;
+	border-color: #E51937;
+}
+.future__mainText br {
+	display: none;
 }
 .future__item {
 	display: none;
@@ -828,6 +837,7 @@ body {
 	width: 375px;
 	height: 294px;
 	margin: 0 auto 0 auto;
+	overflow: hidden;
 }
 .carFrame br {
 	display: none;
@@ -911,25 +921,30 @@ body {
 }
 .security__aside {
 	width: 100%;
-	min-height: 250px;
 	position: static;
 	display: block;
 	margin: 0;
 	background-color: #E51937;
 	color: white;
+	text-align: center;
 }
 .security__tittle {
-	margin: 0px auto 11px auto;
+	width: 75%;
+	margin: 15px auto 15px auto;
 	padding-top: 18px;
-	width: 350px;
 	font-size:30px;
 	line-height:37px;
 	font-family: MontserratSemiBold;
+	text-align: center;
 }
 .security__text {
+	width: 85%;
 	margin: 0 28px 0 31px;
 	font-size: 15px;
 	font-family: MontserratMedium;
+	padding-bottom: 30px;
+    background-color: #E51937;
+    text-align: justify;
 }
 .security__item {
 	display: none;
