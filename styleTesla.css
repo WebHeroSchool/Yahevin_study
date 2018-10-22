@@ -1,9 +1,7 @@
 @media (min-width: 1024px) {
 body {
 	width: 100%;
-	height: 2700px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 0 auto;
 }
 /*Шапка*/
 .navBar {
@@ -83,6 +81,7 @@ body {
 	text-align: center;
 	height: 450px;
 	margin-bottom: 38px;
+	overflow: hidden;
 }
 .teslaModelS__mainImg {
 	display: inline-block;
@@ -220,7 +219,14 @@ body {
 	width: 79%;	
 }
 @media (max-width: 1630px) and (min-width: 1024px) {
-	.future__img { width: 1273px;}
+	.future__img { 
+		width: 1273px;
+	}
+	.future__imgBox {
+	display: block;
+	overflow: hidden;
+}
+
 }
 .future__model_tittle {
 	z-index: 1;
@@ -413,6 +419,52 @@ body {
 	line-height: 15px;
 	font-family: MontserratSemiBold;
 }
+@media (max-width: 1440px) and (min-width: 1024px) {
+	.carFrame {
+		position: absolute;
+		width: 100%;
+		height: 900px;
+		left: auto;
+		right: 0;
+		overflow: hidden;
+	}
+	.carFrame__img {
+		position: absolute;
+		z-index: 2;	
+		top: 223px;	
+		right: 2vw;
+		width: 66%;
+		height: auto;
+	}
+	.carFrame__backTittle {
+		position: absolute;
+		top: 97px;
+		right: 0;
+		font-size: 13vw;
+		line-height: 244px;
+		font-family: MontserratSemiBold;
+		opacity: .1;
+		color: #E51937;
+	}
+	.carFrame__front_stick {
+	display: none;
+	}
+	.carFrame__front_text {
+		display: none;
+	}
+	.carFrame__side_stick {
+		display: none;
+	}
+	.carFrame__side_text {
+		display: none;
+	}
+	.carFrame__under_stick {
+		display: none;
+	}
+	.carFrame__under_text {
+		display: none;
+	}
+}
 
 /*Левая колонка*/
 .security__aside {
@@ -522,6 +574,7 @@ body {
 	font-family: MontserratBold;
 }
 .footer {
+	position: relative;
 	float: right;
 	font-size: 8px;
 	z-index: 100;
@@ -547,7 +600,7 @@ body {
 @media (max-width: 1023px) {
 body {
 	width: 100%;
-	min-width: 355px;
+	min-width: 375px;
 	margin: 0;
 }
 .navBar {
@@ -595,6 +648,7 @@ body {
 	position: relative;
 	margin-bottom: 34px;
 	width: 100%;
+	overflow: hidden;
 }
 .teslaModelS__mainImg {
 	max-width: 95.2%;
@@ -736,18 +790,18 @@ body {
 }
 .future__aside {
 	width: 100%;
-	min-height: 250px;
 	position: static;
 	display: inline-block;
 	margin: -16px 0 0 0;
 	background-color: #E51937;
 	color: #FFFFFF;
+	text-align: center;
 }
 .future__model_tittle {
 	display: none;
 }
 .future__tittle {
-	margin: 0px 33px 9px 26px;
+	margin: 15px 33px 15px 26px;
 	padding-top: 18px;
 	font-size: 30px;
 	font-family: MontserratSemiBold;
@@ -755,10 +809,17 @@ body {
 	text-align: center;
 }
 .future__mainText {
-	margin: 0 33px 34px 26px;
+	margin: 0 33px 0 26px;
 	line-height: 19px;
 	font-size: 15px;
 	font-family: MontserratMedium;
+	text-align: justify;
+	width: 85%;
+	padding-bottom: 34px;
+	border-color: #E51937;
+}
+.future__mainText br {
+	display: none;
 }
 .future__item {
 	display: none;
@@ -776,6 +837,7 @@ body {
 	width: 375px;
 	height: 294px;
 	margin: 0 auto 0 auto;
+	overflow: hidden;
 }
 .carFrame br {
 	display: none;
@@ -859,25 +921,30 @@ body {
 }
 .security__aside {
 	width: 100%;
-	min-height: 250px;
 	position: static;
 	display: block;
 	margin: 0;
 	background-color: #E51937;
 	color: white;
+	text-align: center;
 }
 .security__tittle {
-	margin: 0px auto 11px auto;
+	width: 75%;
+	margin: 15px auto 15px auto;
 	padding-top: 18px;
-	width: 300px;
 	font-size:30px;
 	line-height:37px;
 	font-family: MontserratSemiBold;
+	text-align: center;
 }
 .security__text {
+	width: 85%;
 	margin: 0 28px 0 31px;
 	font-size: 15px;
 	font-family: MontserratMedium;
+	padding-bottom: 30px;
+    background-color: #E51937;
+    text-align: justify;
 }
 .security__item {
 	display: none;
